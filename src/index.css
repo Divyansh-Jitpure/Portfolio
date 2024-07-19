@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #12071f;
+    line-height: 1.625;
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+    color: #12071f;
+    background: #67e8f9;
+}
+
+.scroll-tracker {
+    width: 3px;
+    height: 100vh;
+    position: fixed;
+    left: 30px;
+    top: 100%;
+    z-index: 1000;
+    background-color: cyan;
+    transform-origin: bottom;
+    animation: scroll-tracker linear;
+    animation-timeline: scroll();
+    box-shadow: cyan 1px 0 25px;
+    ;
+}
+
+@keyframes scroll-tracker {
+    to {
+        top: 0;
+    }
+}
+
+.rocket {
+    position: absolute;
+    /* scale: 20; */
+    width: 50px;
+    margin-top: -45px;
+    margin-left: -23.5px;
+    transform: rotate(-45deg);
+}
