@@ -9,7 +9,8 @@ function App() {
   return (
     <>
       <ScrollTracker />
-      <main className="relative mx-auto w-[85vw] flex justify-center gap-4 ">
+
+      <main className="relative mx-auto w-[85vw] laptop:flex laptop:gap-4">
         {/* <Left /> */}
         <Right />
       </main>

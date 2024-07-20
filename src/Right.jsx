@@ -1,4 +1,3 @@
-import React, { useEffect, createContext } from "react";
 import About from "./sections/About";
 import Education from "./sections/Education";
 import Projects from "./sections/Projects";
@@ -22,7 +21,7 @@ const Right = () => {
           projectsInView,
         }}
       />
-      <div className="w-1/2 text-white pt-24 py-24">
+      <div className="laptop:w-1/2 text-white laptop:py-24">
         <About aboutRef={aboutRef} />
         <Education eduRef={eduRef} />
         <Skills skillsRef={skillsRef} />

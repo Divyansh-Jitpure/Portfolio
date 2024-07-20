@@ -28,14 +28,6 @@ body {
 }
 
 .scroll-tracker {
-    width: 3px;
-    height: 100vh;
-    position: fixed;
-    left: 30px;
-    top: 100%;
-    z-index: 1000;
-    background-color: cyan;
-    transform-origin: bottom;
     animation: scroll-tracker linear;
     animation-timeline: scroll();
     box-shadow: cyan 1px 0 25px;

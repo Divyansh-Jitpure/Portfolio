@@ -9,7 +9,7 @@ const NavLinks = ({ isActive }) => {
   isActive.projectsInView && (isActive.skillsInView = false);
 
   return (
-    <div className="my-10">
+    <div className="my-10 hidden laptop:block">
       <Link title="About" goto="#about" active={isActive.aboutInView} />
       <Link
         title="Education/Experience"
