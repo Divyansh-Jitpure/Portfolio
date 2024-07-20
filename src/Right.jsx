@@ -2,6 +2,7 @@ import About from "./sections/About";
 import Education from "./sections/Education";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
+import Footer from "./sections/Footer";
 import { useInView } from "react-intersection-observer";
 import Left from "./Left";
 
@@ -21,11 +22,12 @@ const Right = () => {
           projectsInView,
         }}
       />
-      <div className="laptop:w-1/2 text-white laptop:py-24">
+      <div className="laptop:w-1/2 text-white pb-10 laptop:pt-24">
         <About aboutRef={aboutRef} />
         <Education eduRef={eduRef} />
         <Skills skillsRef={skillsRef} />
         <Projects projectsRef={projectsRef} />
+        <Footer />
       </div>
     </>
   );

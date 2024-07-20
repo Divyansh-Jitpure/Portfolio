@@ -16,7 +16,11 @@ const Skills = ({ skillsRef }) => {
   const tails =
     "invisible w-[100px] bg-black/30 text-white text-center rounded-lg px-[5px] absolute z-[1] top-[90%] left-1/2 ml-[-50px] group-hover:visible";
   return (
-    <section ref={skillsRef} id="skills" className=" mb-32 scroll-mt-24 ">
+    <section
+      ref={skillsRef}
+      id="skills"
+      className="mb-24 laptop:mb-32 scroll-mt-24 "
+    >
       <h2 className="text-2xl font-medium mb-5 text-cyan-300">
         <u>Skills</u>
       </h2>

@@ -3,7 +3,11 @@ import ExpCard from "../components/ExpCard";
 
 const Education = ({ eduRef }) => {
   return (
-    <section ref={eduRef} id="education" className="mb-32 scroll-mt-24">
+    <section
+      ref={eduRef}
+      id="education"
+      className="mb-24 laptop:mb-32 scroll-mt-24"
+    >
       <h2 className="text-2xl font-medium mb-5 text-cyan-300">
         <u>Experience</u>
       </h2>

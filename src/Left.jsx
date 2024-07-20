@@ -4,7 +4,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 
 const Left = ({ isActive }) => {
   return (
-    <div className="laptop:sticky laptop:top-0 laptop:flex laptop:h-screen laptop:w-1/2 laptop:flex-col laptop:justify-between text-white py-24">
+    <div className="laptop:sticky laptop:top-0 laptop:flex laptop:h-screen laptop:w-1/2 laptop:flex-col laptop:justify-between text-white pt-14 pb-20 laptop:py-20">
       <div className="">
         <h1 className="text-5xl text-cyan-300 font-bold">Divyansh Jitpure</h1>
         <h2 className="hidden laptop:block mt-4 text-lg font-medium">

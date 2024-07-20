@@ -3,7 +3,11 @@ import Contact from "./Contact";
 const About = ({ aboutRef }) => {
   return (
     <>
-      <section ref={aboutRef} id="about" className="mb-32 scroll-mt-24 ">
+      <section
+        ref={aboutRef}
+        id="about"
+        className="mb-24 laptop:mb-32 scroll-mt-24 "
+      >
         <h2 className="laptop:hidden text-2xl font-medium mb-6 text-cyan-300">
           <u>About</u>
         </h2>

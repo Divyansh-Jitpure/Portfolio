@@ -3,11 +3,7 @@ import Project from "../components/Project";
 
 const Projects = ({ projectsRef }) => {
   return (
-    <section
-      ref={projectsRef}
-      id="projects"
-      className="pb-24 laptop:pb-0 scroll-mt-24"
-    >
+    <section ref={projectsRef} id="projects" className="mb-24 scroll-mt-24">
       <h2 className="text-2xl mb-5 font-medium text-cyan-300">
         <u>Projects</u>
       </h2>
