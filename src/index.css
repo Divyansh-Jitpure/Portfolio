@@ -48,3 +48,26 @@ body {
     margin-left: -23.5px;
     transform: rotate(-45deg);
 }
+
+/* width */
+::-webkit-scrollbar {
+    @apply laptop:w-3 w-1;
+}
+
+
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #475669;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #47566996;
+}
