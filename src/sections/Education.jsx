@@ -6,9 +6,9 @@ const Education = ({ eduRef }) => {
     <section
       ref={eduRef}
       id="education"
-      className="mb-24 laptop:mb-32 scroll-mt-24"
+      className="mb-24 scroll-mt-24 laptop:mb-32"
     >
-      <h2 className="text-2xl font-medium mb-5 text-cyan-300">
+      <h2 className="mb-5 text-2xl font-medium text-cyan-300">
         <u>Experience</u>
       </h2>
       <ExpCard
@@ -17,7 +17,7 @@ const Education = ({ eduRef }) => {
         duration="2024 - Present"
         place="Indore, India"
       />
-      <h2 className="text-2xl font-medium  mb-5 text-cyan-300">
+      <h2 className="mb-5 text-2xl font-medium text-cyan-300">
         <u>Education</u>
       </h2>
       <ExpCard

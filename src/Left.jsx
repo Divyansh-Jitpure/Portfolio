@@ -4,16 +4,16 @@ import { RiTwitterXFill } from "react-icons/ri";
 
 const Left = ({ isActive }) => {
   return (
-    <div className="laptop:sticky laptop:top-0 laptop:flex laptop:h-screen laptop:w-1/2 laptop:flex-col laptop:justify-between text-white pt-14 pb-20 laptop:py-20">
+    <div className="pb-20 pt-14 text-white laptop:sticky laptop:top-0 laptop:flex laptop:h-screen laptop:w-1/2 laptop:flex-col laptop:justify-between laptop:py-20">
       <div className="">
-        <h1 className="text-5xl text-cyan-300 font-bold">Divyansh Jitpure</h1>
-        <h2 className="hidden laptop:block mt-4 text-lg font-medium">
+        <h1 className="text-5xl font-bold text-cyan-300">Divyansh Jitpure</h1>
+        <h2 className="mt-4 hidden text-lg font-medium laptop:block">
           🌐 Web Developer | Front-End Enthusiast 🚀
         </h2>
-        <h2 className="laptop:hidden mt-4 text-lg font-medium">
+        <h2 className="mt-4 text-lg font-medium laptop:hidden">
           🌐 Web Developer
         </h2>
-        <h2 className="laptop:hidden mt-3 text-lg font-medium">
+        <h2 className="mt-3 text-lg font-medium laptop:hidden">
           🚀 Front-End Enthusiast
         </h2>
       </div>
@@ -21,7 +21,7 @@ const Left = ({ isActive }) => {
       {/* NavLinks */}
       <NavLinks isActive={isActive} />
       {/* Contact Links */}
-      <ul className="flex ml-1 items-center laptop:mt-0 mt-10">
+      <ul className="ml-1 mt-10 flex items-center laptop:mt-0">
         <li className="mr-5">
           <a target="_blank" href="https://github.com/Divyansh-Jitpure">
             <SiGithub className="h-7 w-7 text-slate-300 transition hover:text-cyan-400" />

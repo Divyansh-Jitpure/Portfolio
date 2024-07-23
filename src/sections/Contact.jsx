@@ -24,11 +24,11 @@ const Contact = () => {
   return (
     <section>
       <dialog
-        className="text-center m-auto bg-[#1d2433] backdrop:bg-black/40 rounded-lg"
+        className="m-auto rounded-lg bg-[#1d2433] text-center backdrop:bg-black/40"
         ref={diaRef}
       >
-        <button className="absolute top-0 right-0 m-4" onClick={closeDia}>
-          <RiCloseLargeFill className="text-white m-2 text-xl" />
+        <button className="absolute right-0 top-0 m-4" onClick={closeDia}>
+          <RiCloseLargeFill className="m-2 text-xl text-white" />
         </button>
         <Form closeDia={closeDia} emailToast={emailToast} />
       </dialog>
@@ -39,10 +39,10 @@ const Contact = () => {
         landscape of web development and IT industry.
       </p>
 
-      <div className="text-center my-4">
+      <div className="my-4 text-center">
         <button
           onClick={openDia}
-          className="text-white transition border-b-[1px] border-b-cyan-300 py-2 px-6 focus:outline-none hover:bg-slate-500/20 hover:text-cyan-400 rounded-lg text-lg "
+          className="rounded-lg border-b-[1px] border-b-cyan-300 px-6 py-2 text-lg text-white transition hover:bg-slate-500/20 hover:text-cyan-400 focus:outline-none"
         >
           Contact Me
         </button>

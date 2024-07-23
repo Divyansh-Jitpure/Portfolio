@@ -6,9 +6,9 @@ const About = ({ aboutRef }) => {
       <section
         ref={aboutRef}
         id="about"
-        className="mb-24 laptop:mb-32 scroll-mt-24 "
+        className="mb-24 scroll-mt-24 laptop:mb-32"
       >
-        <h2 className="laptop:hidden text-2xl font-medium mb-6 text-cyan-300">
+        <h2 className="mb-6 text-2xl font-medium text-cyan-300 laptop:hidden">
           <u>About</u>
         </h2>
         <p className="mb-4">

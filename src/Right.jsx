@@ -22,7 +22,7 @@ const Right = () => {
           projectsInView,
         }}
       />
-      <div className="laptop:w-1/2 text-white pb-10 laptop:pt-24">
+      <div className="pb-10 text-white laptop:w-1/2 laptop:pt-24">
         <About aboutRef={aboutRef} />
         <Education eduRef={eduRef} />
         <Skills skillsRef={skillsRef} />

@@ -32,16 +32,16 @@ const Link = (props) => {
       <span
         className={
           !props.active
-            ? "mr-4 h-[2px] w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 "
-            : "mr-4 h-[2px] w-16 bg-slate-200 transition-all group-hover:w-16 group-hover:bg-slate-200  motion-reduce:transition-none"
+            ? "mr-4 h-[2px] w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200"
+            : "mr-4 h-[2px] w-16 bg-slate-200 transition-all group-hover:w-16 group-hover:bg-slate-200 motion-reduce:transition-none"
         }
       ></span>
       {/* group-focus-visible:w-16 group-focus-visible:bg-slate-200 */}
       <span
         className={
           !props.active
-            ? "font-bold uppercase text-slate-500 group-hover:text-cyan-400 "
-            : "font-bold uppercase text-cyan-500 group-hover:text-cyan-400 "
+            ? "font-bold uppercase text-slate-500 group-hover:text-cyan-400"
+            : "font-bold uppercase text-cyan-500 group-hover:text-cyan-400"
         }
       >
         {/* group-focus-visible:text-slate-200 */}

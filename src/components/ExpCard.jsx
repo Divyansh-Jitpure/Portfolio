@@ -1,6 +1,6 @@
 const ExpCard = (props) => {
   return (
-    <div className="p-3 cursor-default hover:bg-slate-500/20  hover:drop-shadow-lg rounded-md transition motion-reduce my-2 group">
+    <div className="motion-reduce group my-2 cursor-default rounded-md p-3 transition hover:bg-slate-500/20 hover:drop-shadow-lg">
       <h2 className="text-lg group-hover:text-cyan-400">{props.institution}</h2>
       <p className="text-base font-light text-slate-300/80">
         {props.work
