@@ -3,12 +3,14 @@ import { FaReact } from "react-icons/fa";
 import { PiFileCppFill } from "react-icons/pi";
 import {
   SiCss3,
+  SiFirebase,
   SiFlask,
   SiGithub,
   SiHtml5,
   SiJavascript,
   SiPython,
   SiTailwindcss,
+  SiVite,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -62,11 +64,19 @@ const Skills = ({ skillsRef }) => {
           <span className={tails}>GitHub</span>
         </div>
         <div className="group relative inline-block transition hover:text-cyan-400">
+          <SiFirebase className="m-3 text-7xl" />
+          <span className={tails}>Firebase</span>
+        </div>
+        <div className="group relative inline-block transition hover:text-cyan-400">
           <VscVscode className="m-3 text-7xl" />
           <span className={tails}>VS Code</span>
         </div>
+        <div className="group relative inline-block transition hover:text-cyan-400">
+          <SiVite className="m-3 text-7xl" />
+          <span className={tails}>Vite</span>
+        </div>
       </div>
-      <div className="my-4 text-center">
+      <div className="text-center">
         <a target="_blank" href="resume.pdf">
           <button className="mt-10 rounded-lg border-b-[1px] border-b-cyan-300 px-6 py-2 text-lg text-white transition hover:bg-slate-500/20 hover:text-cyan-400 focus:outline-none">
             View Resume

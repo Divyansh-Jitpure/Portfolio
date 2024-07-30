@@ -1,5 +1,5 @@
 import NavLinks from "./components/NavLinks";
-import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
 import { RiTwitterXFill } from "react-icons/ri";
 
 const Left = ({ isActive }) => {
@@ -43,6 +43,11 @@ const Left = ({ isActive }) => {
         <li className="mr-5">
           <a target="_blank" href="https://www.instagram.com/one_divyansh/">
             <SiInstagram className="h-7 w-7 text-slate-300 transition hover:text-cyan-400" />
+          </a>
+        </li>
+        <li className="mr-5">
+          <a target="_blank" href="https://www.youtube.com/@one_Divyansh">
+            <SiYoutube className="h-9 w-9 text-slate-300 transition hover:text-cyan-400" />
           </a>
         </li>
       </ul>
