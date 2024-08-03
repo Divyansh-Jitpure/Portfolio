@@ -13,6 +13,8 @@ import {
   SiVite,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import { analytics } from "../firebase-config.js";
+import { logEvent } from "firebase/analytics";
 
 const Skills = ({ skillsRef }) => {
   const tails =
@@ -78,7 +80,12 @@ const Skills = ({ skillsRef }) => {
       </div>
       <div className="text-center">
         <a target="_blank" href="resume.pdf">
-          <button className="mt-10 rounded-lg border-b-[1px] border-b-cyan-300 px-6 py-2 text-lg text-white transition hover:bg-slate-500/20 hover:text-cyan-400 focus:outline-none">
+          <button
+            onClick={() => {
+              logEvent(analytics, "Opened Resume");
+            }}
+            className="mt-10 rounded-lg border-b-[1px] border-b-cyan-300 px-6 py-2 text-lg text-white transition hover:bg-slate-500/20 hover:text-cyan-400 focus:outline-none"
+          >
             View Resume
           </button>
         </a>

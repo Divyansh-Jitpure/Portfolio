@@ -1,6 +1,8 @@
 import NavLinks from "./components/NavLinks";
-import { SiGithub, SiInstagram, SiLinkedin, SiYoutube } from "react-icons/si";
+import { SiGithub, SiInstagram, SiLinkedin } from "react-icons/si";
 import { RiTwitterXFill, RiYoutubeLine } from "react-icons/ri";
+import { analytics } from "./firebase-config.js";
+import { logEvent } from "firebase/analytics";
 
 const Left = ({ isActive }) => {
   const tails =
@@ -26,13 +28,22 @@ const Left = ({ isActive }) => {
       {/* Contact Links */}
       <ul className="ml-1 mt-10 flex items-center laptop:mt-0">
         <li className="group relative mr-5">
-          <a target="_blank" href="https://github.com/Divyansh-Jitpure">
+          <a
+            onClick={() => {
+              logEvent(analytics, "Opened GitHub");
+            }}
+            target="_blank"
+            href="https://github.com/Divyansh-Jitpure"
+          >
             <SiGithub className="h-7 w-7 text-slate-300 transition hover:text-cyan-400" />
             <span className={tails}>GitHub</span>
           </a>
         </li>
         <li className="group relative mr-5">
           <a
+            onClick={() => {
+              logEvent(analytics, "Opened LinkedIn");
+            }}
             target="_blank"
             href="https://www.linkedin.com/in/divyansh-jitpure/"
           >
@@ -41,19 +52,37 @@ const Left = ({ isActive }) => {
           </a>
         </li>
         <li className="group relative mr-5">
-          <a target="_blank" href="https://twitter.com/DivyanshJitpure">
+          <a
+            onClick={() => {
+              logEvent(analytics, "Opened Twitter");
+            }}
+            target="_blank"
+            href="https://twitter.com/DivyanshJitpure"
+          >
             <RiTwitterXFill className="h-8 w-8 text-slate-300 transition hover:text-cyan-400" />
             <span className={tails}>Twitter</span>
           </a>
         </li>
         <li className="group relative mr-5">
-          <a target="_blank" href="https://www.instagram.com/one_divyansh/">
+          <a
+            onClick={() => {
+              logEvent(analytics, "Opened Instagram");
+            }}
+            target="_blank"
+            href="https://www.instagram.com/one_divyansh/"
+          >
             <SiInstagram className="h-7 w-7 text-slate-300 transition hover:text-cyan-400" />
             <span className={tails}>Instagram</span>
           </a>
         </li>
         <li className="group relative mr-5">
-          <a target="_blank" href="https://www.youtube.com/@one_Divyansh">
+          <a
+            onClick={() => {
+              logEvent(analytics, "Opened YouTube");
+            }}
+            target="_blank"
+            href="https://www.youtube.com/@one_Divyansh"
+          >
             <RiYoutubeLine className="h-10 w-10 text-slate-300 transition hover:text-cyan-400" />
             <span className={tails}>YouTube</span>
           </a>

@@ -1,9 +1,7 @@
 import "./App.css";
 import ScrollTracker from "./components/ScrollTracker";
 import Right from "./Right";
-// import { Toaster, toast } from "sonner";
-
-// export const EduContext = createContext();
+import { analytics } from "./firebase-config.js";
 
 function App() {
   return (

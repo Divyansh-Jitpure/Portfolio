@@ -1,8 +1,16 @@
 import Badge from "../components/Badge";
+import { analytics } from "../firebase-config.js";
+import { logEvent } from "firebase/analytics";
 
 const Project = (props) => {
   return (
-    <a target="_blank" href={props.projectLink}>
+    <a
+      onClick={() => {
+        logEvent(analytics, `Opened ${props.title}`);
+      }}
+      target="_blank"
+      href={props.projectLink}
+    >
       <div className="motion-reduce group my-2 rounded-md p-3 transition hover:bg-slate-500/20 hover:drop-shadow-lg">
         <h2 className="text-xl group-hover:text-cyan-400">{props.title}</h2>
         <p className="text-base font-light text-slate-300/80 group-hover:text-slate-300">

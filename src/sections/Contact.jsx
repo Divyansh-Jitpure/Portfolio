@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import Form from "../components/Form";
 import { RiCloseLargeFill } from "react-icons/ri";
 import { Toaster, toast } from "sonner";
+import { analytics } from "../firebase-config.js";
+import { logEvent } from "firebase/analytics";
 
 const Contact = () => {
   const emailToast = () => toast.success("Email Sent!");
@@ -12,6 +14,7 @@ const Contact = () => {
     document.body.style.overflow = "";
   };
   const openDia = () => {
+    logEvent(analytics, "Opened Contact Form");
     diaRef.current?.showModal();
     document.body.style.overflow = "hidden";
     diaRef.current?.addEventListener("close", closeDia);

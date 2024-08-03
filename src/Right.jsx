@@ -5,7 +5,6 @@ import Skills from "./sections/Skills";
 import Footer from "./sections/Footer";
 import { useInView } from "react-intersection-observer";
 import Left from "./Left";
-
 const Right = () => {
   const { ref: aboutRef, inView: aboutInView } = useInView();
   const { ref: eduRef, inView: eduInView } = useInView();
