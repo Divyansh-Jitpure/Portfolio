@@ -31,8 +31,12 @@ body {
     animation: scroll-tracker linear;
     animation-timeline: scroll();
     box-shadow: cyan 1px 0 25px;
-    ;
 }
+
+.lineA {
+    box-shadow: 0 0 15px cyan;
+}
+
 
 @keyframes scroll-tracker {
     to {
