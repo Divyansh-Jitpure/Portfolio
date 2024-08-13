@@ -1,9 +1,20 @@
 import React from "react";
 import Project from "./components/Project";
+import { useNavigate } from "react-router-dom";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 const ProjectsPage = () => {
+  const navigate = useNavigate();
   return (
     <>
+      <button
+        onClick={() => {
+          navigate("/");
+        }}
+        className="absolute left-2 top-6 z-50 flex items-center rounded-lg border-r-[1px] border-r-cyan-300 px-4 py-2 text-lg text-white transition hover:bg-slate-500/20 hover:text-cyan-400"
+      >
+        <FaArrowLeftLong className="mr-2" /> Go Back
+      </button>
       <div className="relative mx-auto px-56 pt-24">
         <h1 className="mb-5 text-center text-4xl font-medium text-cyan-300">
           Projects
