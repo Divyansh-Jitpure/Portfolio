@@ -15,9 +15,9 @@ const ProjectsPage = () => {
       >
         <FaArrowLeftLong className="mr-2" /> Go Back
       </button>
-      <div className="relative mx-auto px-56 pt-24">
+      <div className="relative mx-auto px-4 pt-24 lg:px-56">
         <h1 className="mb-5 text-center text-4xl font-medium text-cyan-300">
-          Projects
+          All Projects
         </h1>
         <Project
           title="CooPalette"

@@ -28,7 +28,7 @@ const Skills = ({ skillsRef }) => {
       <h2 className="mb-5 text-2xl font-medium text-cyan-300">
         <u>Skills</u>
       </h2>
-      <div className="mt-5 flex flex-wrap gap-3">
+      <div className="mt-5 flex flex-wrap lg:gap-3">
         <div className="group relative inline-block transition hover:text-cyan-400">
           <FaReact className="m-3 text-7xl" />
           <span className={tails}>React</span>

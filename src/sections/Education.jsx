@@ -11,12 +11,24 @@ const Education = ({ eduRef }) => {
       <h2 className="mb-5 text-2xl font-medium text-cyan-300">
         <u>Experience</u>
       </h2>
-      <ExpCard
-        institution="Tata Consultancy Services"
-        specialisation="Assistant System Engineer"
-        duration="2024 - Present"
-        place="Indore, India"
-      />
+      <div className="motion-reduce group my-2 cursor-default rounded-md p-3 transition hover:bg-slate-500/20 hover:drop-shadow-lg">
+        <h2 className="text-lg group-hover:text-cyan-400">
+          Tata Consultancy Services
+        </h2>
+        <p className="text-base font-light text-slate-300/80">
+          Assistant System Engineer
+        </p>
+        <p className="text-base font-light text-slate-300/80">
+          Feb 2024 - Present | Indore, India
+        </p>
+        <p className="text-base font-light text-slate-300/80">
+          — Worked on a project with tech stack HTML, CSS, Javascript, Python,
+          Flask and SQLite in training.
+        </p>
+        <p className="text-base font-light text-slate-300/80">
+          — Another project as a SAP ABAP Developer.
+        </p>
+      </div>
       <h2 className="mb-5 text-2xl font-medium text-cyan-300">
         <u>Education</u>
       </h2>
