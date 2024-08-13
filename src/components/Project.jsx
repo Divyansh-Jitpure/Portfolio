@@ -11,8 +11,10 @@ const Project = (props) => {
       target="_blank"
       href={props.projectLink}
     >
-      <div className="motion-reduce group my-2 rounded-md p-3 transition hover:bg-slate-500/20 hover:drop-shadow-lg">
-        <h2 className="text-xl group-hover:text-cyan-400">{props.title}</h2>
+      <div className="group my-2 rounded-md p-3 transition hover:bg-slate-500/20 hover:drop-shadow-lg">
+        <h2 className="text-xl text-white group-hover:text-cyan-400">
+          {props.title}
+        </h2>
         <p className="text-base font-light text-slate-300/80 group-hover:text-slate-300">
           {props.description}
         </p>

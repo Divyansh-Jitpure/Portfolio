@@ -1,7 +1,9 @@
 import React from "react";
 import Project from "../components/Project";
+import { useNavigate } from "react-router-dom";
 
 const Projects = ({ projectsRef }) => {
+  const navigate = useNavigate();
   return (
     <section ref={projectsRef} id="projects" className="mb-24 scroll-mt-24">
       <h2 className="mb-5 text-2xl font-medium text-cyan-300">
@@ -21,23 +23,22 @@ const Projects = ({ projectsRef }) => {
         techStack={["React JS", "Tailwind CSS", "Three JS", "Google Firebase"]}
       />
       <Project
-        title="CooPalette"
-        description="COOPALETTE is a web-based color palette generator that offers an endless array of color combinations and their corresponding Hex Codes. Whether you're a designer seeking inspiration or a developer looking to enhance visual aesthetics, COOPALETTE has you covered."
-        projectLink="https://coopalette.web.app/"
-        techStack={["HTML", "CSS", "JavaScript", "Google Firebase"]}
+        title="Prayog Crafts"
+        description="Prayog Crafts, an e-commerce platform dedicated to selling electronic DIY kits. These kits are perfect for small electronics projects, prototyping, and DIY automation. The website boasts a fully responsive and dynamic UI, ensuring a seamless  user experience across all devices."
+        projectLink="https://prayog-crafts.web.app/"
+        techStack={["React JS", "Tailwind CSS", "Three JS", "Google Firebase"]}
       />
-      <Project
-        title="Games Of Web"
-        description="Games of Web is a platform featuring a collection of simple and engaging web-based games."
-        projectLink="https://games-of-web.web.app/"
-        techStack={[
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Tailwind CSS",
-          "Google Firebase",
-        ]}
-      />
+      <div className="text-center">
+        <button
+          onClick={() => {
+            navigate("/projects");
+            logEvent(analytics, "Opened Resume");
+          }}
+          className="rounded-lg border-b-[1px] border-b-cyan-300 px-6 py-2 text-lg text-white transition hover:bg-slate-500/20 hover:text-cyan-400 focus:outline-none"
+        >
+          View all Projects
+        </button>
+      </div>
     </section>
   );
 };

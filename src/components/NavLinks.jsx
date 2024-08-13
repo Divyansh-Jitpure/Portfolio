@@ -32,8 +32,8 @@ const Link = (props) => {
       <span
         className={
           !props.active
-            ? "mr-4 h-[2px] w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200"
-            : "lineA mr-4 h-[2px] w-16 bg-slate-200 transition-all group-hover:w-16 group-hover:bg-slate-200"
+            ? "mr-4 h-[2px] w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-cyan-100"
+            : "lineA mr-4 h-[2px] w-16 bg-cyan-100 transition-all group-hover:w-16 group-hover:bg-cyan-100"
         }
       ></span>
       {/* group-focus-visible:w-16 group-focus-visible:bg-slate-200 */}
@@ -41,7 +41,7 @@ const Link = (props) => {
         className={
           !props.active
             ? "font-bold uppercase text-slate-500 group-hover:text-cyan-400"
-            : "font-bold uppercase text-cyan-500 group-hover:text-cyan-400"
+            : "font-bold uppercase text-cyan-400 group-hover:text-cyan-400"
         }
       >
         {/* group-focus-visible:text-slate-200 */}

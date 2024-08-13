@@ -1,17 +1,18 @@
 import "./App.css";
-import ScrollTracker from "./components/ScrollTracker";
 import Right from "./Right";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { analytics } from "./firebase-config.js";
+import ProjectsPage from "./ProjectsPage.jsx";
 
 function App() {
   return (
     <>
-      <ScrollTracker />
-
-      <main className="relative mx-auto w-[85vw] laptop:flex laptop:gap-4">
-        {/* <Left /> */}
-        <Right />
-      </main>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Right />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }
