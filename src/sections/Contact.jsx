@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <section>
       <dialog
-        className="m-auto rounded-lg bg-[#1d2433] text-center backdrop:bg-black/40"
+        className="m-auto rounded-lg bg-slate-500/30 text-center backdrop-blur-md backdrop:bg-black/40"
         ref={diaRef}
       >
         <button className="absolute right-0 top-0 m-4" onClick={closeDia}>
