@@ -24,6 +24,9 @@ const ProjectsPage = () => {
           description="COOPALETTE is a web-based color palette generator that offers an endless array of color combinations and their corresponding Hex Codes. Whether you're a designer seeking inspiration or a developer looking to enhance visual aesthetics, COOPALETTE has you covered."
           projectLink="https://coopalette.web.app/"
           techStack={["HTML", "CSS", "JavaScript", "Google Firebase"]}
+          src="src\assets\cooVid.mp4"
+          yOffSet={80}
+          isVideo={true}
         />
         <Project
           title="Games Of Web"
@@ -36,6 +39,8 @@ const ProjectsPage = () => {
             "Tailwind CSS",
             "Google Firebase",
           ]}
+          src="src\assets\gow.png"
+          yOffSet={80}
         />
       </div>
     </>
