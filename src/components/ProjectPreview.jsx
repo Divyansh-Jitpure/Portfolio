@@ -20,7 +20,7 @@ const ProjectPreview = ({ prevSrc, yOffset, isVideo }) => {
 
   return (
     <div
-      className="pointer-events-none fixed z-[9999] w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-slate-400/30 p-2 backdrop-blur-sm"
+      className="pointer-events-none fixed z-[9999] w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-slate-400/30 px-2 pt-2 backdrop-blur-sm"
       style={{
         left: `${position.x}px`,
         top: `${position.y - yOffset}px`,
@@ -34,7 +34,7 @@ const ProjectPreview = ({ prevSrc, yOffset, isVideo }) => {
         <img src={prevSrc} alt="Project Preview" />
       )}
 
-      <p className="text-sm text-slate-300">Click To Explore</p>
+      <p className="my-1 text-sm text-slate-300">Click To Explore</p>
     </div>
   );
 };
