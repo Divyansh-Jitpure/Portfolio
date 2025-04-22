@@ -10,10 +10,24 @@ const Projects = ({ projectsRef }) => {
         <u>Projects</u>
       </h2>
       <Project
+        title="ResuFusion - Resume Builder"
+        description=" ResuFusion is a dynamic resume builder built with the MERN stack that allows users to create, edit, preview, and download professional resumes with a clean PDF layout in real-time. Features a multi-step form, live preview, and multiple sections including education, experience, projects, skills, and more."
+        projectLink="https://resufusion.web.app/"
+        techStack={[
+          "React JS",
+          "Express Js",
+          "MongoDB",
+          "Tailwind CSS",
+          "Node JS",
+        ]}
+        src="resuFusion2.png"
+        yOffSet={90}
+      />
+      <Project
         title="EditR - Image Editor"
         description="EditR! An image editor built with React, Tailwind CSS, and Firebase. 🎨 EditR offers filter tools like brightness, contrast, saturation, and exposure, plus transform tools such as rotate and flip. Enjoy a responsive UI and dynamic functionality. Edit, transform, and download your images effortlessly!"
         projectLink="https://the-editr.web.app/"
-        techStack={["React JS", "Tailwind CSS", "Google Firebase"]}
+        techStack={["React JS", "Tailwind CSS", "Firebase"]}
         src="editr.png"
         yOffSet={90}
       />
@@ -21,18 +35,11 @@ const Projects = ({ projectsRef }) => {
         title="Divyansh Jitpure - Portfolio"
         description="My first Portfolio website built with React, Tailwind, ThreeJS etc. It showcases everything about my Skills, Experience and projects."
         projectLink="/"
-        techStack={["React JS", "Tailwind CSS", "Three JS", "Google Firebase"]}
+        techStack={["React JS", "Tailwind CSS", "Three JS", "Firebase"]}
         src="port.png"
         yOffSet={80}
       />
-      <Project
-        title="Prayog Crafts"
-        description="Prayog Crafts, an e-commerce platform dedicated to selling electronic DIY kits. These kits are perfect for small electronics projects, prototyping, and DIY automation. The website boasts a fully responsive and dynamic UI, ensuring a seamless  user experience across all devices."
-        projectLink="https://prayog-crafts.web.app/"
-        techStack={["React JS", "Tailwind CSS", "Three JS", "Google Firebase"]}
-        src="prayogCraft.png"
-        yOffSet={80}
-      />
+
       <div className="text-center">
         <button
           onClick={() => {

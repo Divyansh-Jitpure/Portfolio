@@ -15,10 +15,18 @@ const ProjectsPage = () => {
       >
         <FaArrowLeftLong className="mr-2" /> Go Back
       </button>
-      <div className="relative mx-auto px-4 pt-24 lg:px-56">
+      <div className="relative mx-auto px-4 pb-20 pt-24 lg:px-56">
         <h1 className="mb-5 text-center text-4xl font-medium text-cyan-300">
           All Projects
         </h1>
+        <Project
+          title="Prayog Crafts"
+          description="Prayog Crafts, an e-commerce platform dedicated to selling electronic DIY kits. These kits are perfect for small electronics projects, prototyping, and DIY automation. The website boasts a fully responsive and dynamic UI, ensuring a seamless  user experience across all devices."
+          projectLink="https://prayog-crafts.web.app/"
+          techStack={["React JS", "Tailwind CSS", "Firebase"]}
+          src="prayogCraft.png"
+          yOffSet={80}
+        />
         <Project
           title="CooPalette"
           description="COOPALETTE is a web-based color palette generator that offers an endless array of color combinations and their corresponding Hex Codes. Whether you're a designer seeking inspiration or a developer looking to enhance visual aesthetics, COOPALETTE has you covered."
