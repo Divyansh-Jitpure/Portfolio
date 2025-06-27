@@ -38,7 +38,7 @@ const Education = ({ eduRef }) => {
         specialisation="Information Technology"
         duration="2019 - 2023"
         place="Bhopal, India"
-        score="CGPA - 8.34"
+        score="CGPA - 8.43"
       />
       <ExpCard
         institution="Govt. Excellence Higher Secondary School"

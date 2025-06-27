@@ -69,7 +69,7 @@ const Left = ({ isActive }) => {
               logEvent(analytics, "Opened Instagram");
             }}
             target="_blank"
-            href="https://www.instagram.com/one_divyansh/"
+            href="https://www.instagram.com/divyansh.muzic/"
           >
             <SiInstagram className="h-7 w-7 text-slate-300 transition hover:text-cyan-400" />
             <span className={tails}>Instagram</span>
@@ -81,7 +81,7 @@ const Left = ({ isActive }) => {
               logEvent(analytics, "Opened YouTube");
             }}
             target="_blank"
-            href="https://www.youtube.com/@one_Divyansh"
+            href="https://www.youtube.com/@Divyansh.Pianoo"
           >
             <RiYoutubeLine className="h-10 w-10 text-slate-300 transition hover:text-cyan-400" />
             <span className={tails}>YouTube</span>

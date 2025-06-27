@@ -1,6 +1,9 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { PiFileCppFill } from "react-icons/pi";
+import { IoLogoNodejs } from "react-icons/io5";
+import { SiMongodb, SiExpress } from "react-icons/si";
+import { DiNodejs } from "react-icons/di";
 import {
   SiCss3,
   SiFirebase,
@@ -32,6 +35,18 @@ const Skills = ({ skillsRef }) => {
         <div className="group relative inline-block transition hover:text-cyan-400">
           <FaReact className="m-3 text-7xl" />
           <span className={tails}>React</span>
+        </div>
+        <div className="group relative inline-block transition hover:text-cyan-400">
+          <SiExpress className="m-3 text-7xl" />
+          <span className={tails}>Express JS</span>
+        </div>
+        <div className="group relative inline-block transition hover:text-cyan-400">
+          <SiMongodb className="m-3 text-7xl" />
+          <span className={tails}>MongoDB</span>
+        </div>
+        <div className="group relative inline-block transition hover:text-cyan-400">
+          <DiNodejs className="m-3 scale-[150%] text-7xl" />
+          <span className={tails}>Node JS</span>
         </div>
         <div className="group relative inline-block transition hover:text-cyan-400">
           <SiJavascript className="m-3 text-7xl" />
