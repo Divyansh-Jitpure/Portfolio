@@ -81,7 +81,7 @@ const Left = ({ isActive }) => {
               logEvent(analytics, "Opened YouTube");
             }}
             target="_blank"
-            href="https://www.youtube.com/@Divyansh.Pianoo"
+            href="https://www.youtube.com/@Divyansh.Muziic"
           >
             <RiYoutubeLine className="h-10 w-10 text-slate-300 transition hover:text-cyan-400" />
             <span className={tails}>YouTube</span>
