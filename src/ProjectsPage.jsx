@@ -20,6 +20,14 @@ const ProjectsPage = () => {
           All Projects
         </h1>
         <Project
+          title="EditR - Image Editor"
+          description="EditR! An image editor built with React, Tailwind CSS, and Firebase. 🎨 EditR offers filter tools like brightness, contrast, saturation, and exposure, plus transform tools such as rotate and flip. Enjoy a responsive UI and dynamic functionality. Edit, transform, and download your images effortlessly!"
+          projectLink="https://the-editr.web.app/"
+          techStack={["React JS", "Tailwind CSS", "Firebase"]}
+          src="editr.png"
+          yOffSet={90}
+        />
+        <Project
           title="Prayog Crafts"
           description="Prayog Crafts, an e-commerce platform dedicated to selling electronic DIY kits. These kits are perfect for small electronics projects, prototyping, and DIY automation. The website boasts a fully responsive and dynamic UI, ensuring a seamless  user experience across all devices."
           projectLink="https://prayog-crafts.web.app/"

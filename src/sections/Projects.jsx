@@ -10,6 +10,24 @@ const Projects = ({ projectsRef }) => {
         <u>Projects</u>
       </h2>
       <Project
+        title="PassWired - Secure Password Manager App (PWA)"
+        description="PassWired is a Secure, mobile-first Password Manager Progressive Web App (PWA) built with the MERN
+stack, enabling users to store, view and manage encrypted credentials behind a customizable App PIN. It utilizes AES-256 encryption for secure password storage and enforces PIN verification before every sensitive
+interaction."
+        projectLink="https://pass-wired.web.app/"
+        techStack={[
+          "React JS",
+          "Express Js",
+          "MongoDB",
+          "Tailwind CSS",
+          "Node JS",
+          "Redux",
+        ]}
+        src="passwired.png"
+        yOffSet={130}
+        ht={{ h: 210, w: "max-content" }}
+      />
+      <Project
         title="ResuFusion - Resume Builder"
         description=" ResuFusion is a dynamic resume builder built with the MERN stack that allows users to create, edit, preview, and download professional resumes with a clean PDF layout in real-time. Features a multi-step form, live preview, and multiple sections including education, experience, projects, skills, and more."
         projectLink="https://resufusion.web.app/"
@@ -23,14 +41,7 @@ const Projects = ({ projectsRef }) => {
         src="resuFusion2.png"
         yOffSet={90}
       />
-      <Project
-        title="EditR - Image Editor"
-        description="EditR! An image editor built with React, Tailwind CSS, and Firebase. 🎨 EditR offers filter tools like brightness, contrast, saturation, and exposure, plus transform tools such as rotate and flip. Enjoy a responsive UI and dynamic functionality. Edit, transform, and download your images effortlessly!"
-        projectLink="https://the-editr.web.app/"
-        techStack={["React JS", "Tailwind CSS", "Firebase"]}
-        src="editr.png"
-        yOffSet={90}
-      />
+
       <Project
         title="Divyansh Jitpure - Portfolio"
         description="My first Portfolio website built with React, Tailwind, ThreeJS etc. It showcases everything about my Skills, Experience and projects."

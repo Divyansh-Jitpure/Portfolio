@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const ProjectPreview = ({ prevSrc, yOffset, isVideo }) => {
+const ProjectPreview = ({ prevSrc, yOffset, isVideo, ht }) => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -24,6 +24,7 @@ const ProjectPreview = ({ prevSrc, yOffset, isVideo }) => {
       style={{
         left: `${position.x}px`,
         top: `${position.y - yOffset}px`,
+        width: `${ht?.w}`,
       }}
     >
       {isVideo ? (
@@ -31,7 +32,14 @@ const ProjectPreview = ({ prevSrc, yOffset, isVideo }) => {
           <source src={prevSrc} type="video/mp4" />
         </video>
       ) : (
-        <img src={prevSrc} alt="Project Preview" />
+        <img
+          // className={`h-[${ht}px]`}
+          style={{
+            height: `${ht?.h}px`,
+          }}
+          src={prevSrc}
+          alt="Project Preview"
+        />
       )}
 
       <p className="my-1 text-sm text-slate-300">Click To Explore</p>

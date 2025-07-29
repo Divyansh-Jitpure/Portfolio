@@ -43,6 +43,7 @@ const Project = (props) => {
           prevSrc={props.src}
           yOffset={props.yOffSet}
           isVideo={props.isVideo}
+          ht={props.ht}
         />
       )}
     </a>

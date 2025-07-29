@@ -1,9 +1,9 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { PiFileCppFill } from "react-icons/pi";
-import { IoLogoNodejs } from "react-icons/io5";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
+import { TbBrandRedux } from "react-icons/tb";
 import {
   SiCss3,
   SiFirebase,
@@ -65,6 +65,10 @@ const Skills = ({ skillsRef }) => {
           <span className={tails}>Tailwind</span>
         </div>
         <div className="group relative inline-block transition hover:text-cyan-400">
+          <TbBrandRedux className="m-3 text-7xl" />
+          <span className={tails}>Redux</span>
+        </div>
+        <div className="group relative inline-block transition hover:text-cyan-400">
           <SiPython className="m-3 text-7xl" />
           <span className={tails}>Python</span>
         </div>
@@ -72,10 +76,7 @@ const Skills = ({ skillsRef }) => {
           <PiFileCppFill className="m-3 text-7xl" />
           <span className={tails}>C++</span>
         </div>
-        <div className="group relative inline-block transition hover:text-cyan-400">
-          <SiFlask className="m-3 text-7xl" />
-          <span className={tails}>Flask</span>
-        </div>
+
         <div className="group relative inline-block transition hover:text-cyan-400">
           <SiGithub className="m-3 text-7xl" />
           <span className={tails}>GitHub</span>
