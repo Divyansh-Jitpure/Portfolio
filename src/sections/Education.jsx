@@ -16,17 +16,25 @@ const Education = ({ eduRef }) => {
           Tata Consultancy Services
         </h2>
         <p className="text-base font-light text-slate-300/80">
-          Assistant System Engineer
+          System Engineer
         </p>
         <p className="text-base font-light text-slate-300/80">
           Feb 2024 - Present | Indore, India
         </p>
         <p className="text-base font-light text-slate-300/80">
-          — Worked on a project with tech stack HTML, CSS, Javascript, Python,
-          Flask and SQLite in training.
+          — <span className="text-white">React Frontend Project</span>
+          <span className="ml-1 text-sm">
+            ( Tech Stack: React, JavaScript, HTML, CSS, API Integration )
+          </span>
+          <br /> Built responsive, component-based UIs with React, implementing
+          state management, routing, and API integration. Focused on performance
+          optimization and delivery of clean and reusable code aligned with best
+          practices.
         </p>
         <p className="text-base font-light text-slate-300/80">
-          — Another project as a SAP ABAP Developer.
+          — <span className="text-white">SAP ABAP Project</span> <br />
+          Worked on a backend-focused project involving SAP ABAP, contributing
+          to custom report generation, writing queries and small enhancements .
         </p>
       </div>
       <h2 className="mb-5 text-2xl font-medium text-cyan-300">
