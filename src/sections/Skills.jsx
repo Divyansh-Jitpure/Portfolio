@@ -1,13 +1,15 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
 import { PiFileCppFill } from "react-icons/pi";
-import { SiMongodb, SiExpress } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import { TbBrandRedux } from "react-icons/tb";
 import {
+  SiMongodb,
+  SiExpress,
+  SiNextdotjs,
+  SiTypescript,
   SiCss3,
   SiFirebase,
-  SiFlask,
   SiGithub,
   SiHtml5,
   SiJavascript,
@@ -34,7 +36,11 @@ const Skills = ({ skillsRef }) => {
       <div className="mt-5 flex flex-wrap lg:gap-3">
         <div className="group relative inline-block transition hover:text-cyan-400">
           <FaReact className="m-3 text-7xl" />
-          <span className={tails}>React</span>
+          <span className={tails}>React JS</span>
+        </div>
+        <div className="group relative inline-block transition hover:text-cyan-400">
+          <SiNextdotjs className="m-3 text-7xl" />
+          <span className={tails}>Next JS</span>
         </div>
         <div className="group relative inline-block transition hover:text-cyan-400">
           <SiExpress className="m-3 text-7xl" />
@@ -47,6 +53,10 @@ const Skills = ({ skillsRef }) => {
         <div className="group relative inline-block transition hover:text-cyan-400">
           <DiNodejs className="m-3 scale-[150%] text-7xl" />
           <span className={tails}>Node JS</span>
+        </div>
+        <div className="group relative inline-block transition hover:text-cyan-400">
+          <SiTypescript className="m-3 text-7xl" />
+          <span className={tails}>TypeScript</span>
         </div>
         <div className="group relative inline-block transition hover:text-cyan-400">
           <SiJavascript className="m-3 text-7xl" />
