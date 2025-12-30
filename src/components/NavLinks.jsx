@@ -1,26 +1,24 @@
 import React, { useEffect, useState } from "react";
 
-const NavLinks = ({ isActive }) => {
-  // Crap code but works LOL
-  isActive.aboutInView && (isActive.eduInView = false);
-  isActive.eduInView &&
-    (isActive.skillsInView = false) & (isActive.projectsInView = false);
-  isActive.skillsInView && (isActive.projectsInView = false);
-  isActive.projectsInView && (isActive.skillsInView = false);
-
+const NavLinks = ({ activeSection }) => {
   return (
     <div className="my-10 hidden laptop:block">
-      <Link title="About" goto="#about" active={isActive.aboutInView} />
+      <Link title="About" goto="#about" active={activeSection === "about"} />
       <Link
-        title="Education/Experience"
-        goto="#education"
-        active={isActive.eduInView}
+        title="Experience"
+        goto="#experience"
+        active={activeSection === "experience"}
       />
-      <Link title="Skills" goto="#skills" active={isActive.skillsInView} />
+      <Link
+        title="Education"
+        goto="#education"
+        active={activeSection === "education"}
+      />
+      <Link title="Skills" goto="#skills" active={activeSection === "skills"} />
       <Link
         title="Projects"
         goto="#projects"
-        active={isActive.projectsInView}
+        active={activeSection === "projects"}
       />
     </div>
   );

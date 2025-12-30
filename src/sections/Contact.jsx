@@ -39,7 +39,7 @@ const Contact = () => {
       <p>
         🌐 Let's connect! I'm always open to networking, collaborating on
         exciting projects, and engaging in conversations about the ever-evolving
-        landscape of web development and IT industry.
+        landscape of web development and technology.
       </p>
 
       <div className="my-4 text-center">

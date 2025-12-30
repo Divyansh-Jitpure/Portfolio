@@ -4,7 +4,7 @@ import { RiTwitterXFill, RiYoutubeLine } from "react-icons/ri";
 import { analytics } from "./firebase-config.js";
 import { logEvent } from "firebase/analytics";
 
-const Left = ({ isActive }) => {
+const Left = ({ activeSection }) => {
   const tails =
     "invisible w-[100px] bg-black/30 text-white text-center rounded-lg mt-2 px-[5px] absolute z-[1] top-[90%] left-1/2 ml-[-50px] group-hover:visible";
 
@@ -24,7 +24,7 @@ const Left = ({ isActive }) => {
       </div>
 
       {/* NavLinks */}
-      <NavLinks isActive={isActive} />
+      <NavLinks activeSection={activeSection} />
       {/* Contact Links */}
       <ul className="ml-1 mt-10 flex items-center laptop:mt-0">
         <li className="group relative mr-5">
