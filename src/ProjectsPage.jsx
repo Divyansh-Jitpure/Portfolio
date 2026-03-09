@@ -2,11 +2,14 @@ import React from "react";
 import Project from "./components/Project";
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import Seo from "./components/Seo";
+import { PROJECTS_SEO } from "./seo";
 
 const ProjectsPage = () => {
   const navigate = useNavigate();
   return (
     <>
+      <Seo {...PROJECTS_SEO} />
       <button
         onClick={() => {
           navigate("/");

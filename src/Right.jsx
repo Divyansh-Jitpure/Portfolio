@@ -8,6 +8,8 @@ import Left from "./Left";
 import ScrollTracker from "./components/ScrollTracker";
 import Experience from "./sections/Experience";
 import { useState } from "react";
+import Seo from "./components/Seo";
+import { HOME_SEO } from "./seo";
 
 const Right = () => {
   const [activeSection, setActiveSection] = useState("about");
@@ -34,6 +36,7 @@ const Right = () => {
 
   return (
     <>
+      <Seo {...HOME_SEO} />
       <ScrollTracker />
       <div className="relative mx-auto w-[85vw] laptop:flex laptop:gap-4">
         <Left activeSection={activeSection} />
